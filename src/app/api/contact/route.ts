@@ -40,7 +40,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "AK Valeting <onboarding@resend.dev>",
+      from: "AK Valeting <enquiries@akvaleting.co.uk>",
       to: [process.env.CONTACT_EMAIL as string],
       replyTo: email,
       subject: `New website enquiry from ${name}`,
