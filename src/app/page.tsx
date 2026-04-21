@@ -1,65 +1,109 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import Header from "@/components/layout/header";
+import HeroUnit from "@/components/layout/hero-unit";
+import Footer from "@/components/layout/footer";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+    <Header />
+    <div className="flex flex-col flex-1 bg-background">
+      <HeroUnit />
+      <main className="wrapper flex flex-col gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 lg:py-20">
+        <div className="container flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12">
+          <div className="grow shrink basis-auto max-w-152">
+            <Image src="/promo-1.jpg" alt="AK Valeting van" width={624} height={468} className="object-cover" />
+          </div>
+          <div className="grow shrink basis-auto">
+            <div className="flex flex-col gap-4 md:gap-6">
+              <p className="text-foreground text-xl font-medium leading-7">AK Valeting is a professional mobile car valeting service established in 2008, proudly serving North Staffordshire and South Cheshire.</p>
+              <div className="flex flex-col gap-3 md:gap-4">
+                <p className="text-neutral-700 text-base leading-6">We use high-quality products from trusted brands such as Autosmart and Autoglym, the same materials used by leading car dealerships, to ensure every vehicle receives the best possible care. </p>
+                <p className="text-neutral-700 text-base leading-6">Whether you need regular weekly, fortnightly, or monthly maintenance valets, or a one-off full valet when selling or returning a lease vehicle, our goal is to deliver showroom-quality results at a competitive price. </p>
+                <p className="text-neutral-700 text-base leading-6">With full public liability insurance and our own water and electricity supply, we can conveniently valet your car at your home or workplace while you carry on with your day.</p>
+              </div>
+              <ul className="flex flex-wrap gap-4 md:gap-6">
+                <li className="flex items-center gap-2 text-neutral-700 text-base leading-6">
+                  <div className="flex justify-center items-center bg-accent text-white w-8 h-8 rounded">
+                    <i className="fa fa-phone" />
+                  </div>
+                  <span className="text-foreground text-xl font-semibold">07951 803181</span>
+                </li>
+                <li className="flex items-center gap-2 text-neutral-700 text-base leading-6">
+                  <div className="flex justify-center items-center bg-accent text-white w-8 h-8 rounded">
+                    <i className="fa fa-envelope" />
+                  </div>
+                  <span className="text-foreground text-xl font-semibold">Drop us an email</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="container-sm flex flex-col-reverse md:grid md:grid-cols-2 gap-6 md:gap-10" id="what-we-offer">
+          <div className="grow shrink basis-auto">
+            <div className="flex flex-col gap-4 md:gap-6">
+              <h2 className="text-foreground text-2xl md:text-3xl lg:text-4xl font-bold leading-8 md:leading-10 lg:leading-12">Regular valeting to keep your vehicle pristine</h2>
+              <div className="flex flex-col gap-3 md:gap-4">
+                <p className="text-dark-2 text-xl leading-7">If you’re looking to get a regular service, whether that be weekly, fortnightly or monthly, AK Mobile Valeting will keep your vehicle looking at it’s best both inside and out.</p>
+              </div>
+              <ul className="flex flex-col self-start gap-4 md:gap-6">
+                <li className="flex items-center gap-2 pb-1.5 text-dark-2 text-base md:text-lg lg:text-xl leading-6 border-b border-neutral-300">
+                  <i className="far fa-check-circle text-success" />
+                  <span className="font-semibold">Exterior valet</span>
+                </li>
+                <li className="flex items-center gap-2 pb-1.5 text-dark-2 text-base md:text-lg lg:text-xl leading-6 border-b border-neutral-300">
+                  <i className="far fa-check-circle text-success" />
+                  <span className="font-semibold">Interior valet</span>
+                </li>
+                <li className="flex items-center gap-2 pb-1.5 text-dark-2 text-base md:text-lg lg:text-xl leading-6 border-b border-neutral-300">
+                  <i className="far fa-check-circle text-success" />
+                  <span className="font-semibold">Boot valet</span>
+                </li>
+                <li className="flex items-center gap-2 pb-1.5 text-dark-2 text-base md:text-lg lg:text-xl leading-6 border-b border-neutral-300">
+                  <i className="far fa-check-circle text-success" />
+                  <span className="font-semibold">Wheels Cleaned</span>
+                </li>
+                <li className="flex items-center gap-2 pb-1.5 text-dark-2 text-base md:text-lg lg:text-xl leading-6">
+                  <i className="far fa-check-circle text-success" />
+                  <span className="font-semibold">Windows cleaned inside & outside</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="grow shrink basis-auto max-w-152">
+            <Image src="/promo-2.jpg" alt="AK Valeting prestige vehicle" width={1511} height={1595} className="object-cover" />
+          </div>
+        </div>
+        <div className="container-sm flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12">
+          <div className="grow shrink basis-auto max-w-152">
+            <Image src="/promo-3.jpg" alt="AK Valeting commercial vehicles" width={2000} height={1500} className="object-cover" />
+          </div>
+          <div className="grow shrink basis-auto">
+            <div className="flex flex-col gap-4 md:gap-6">
+              <h2 className="text-foreground text-2xl md:text-3xl lg:text-4xl font-bold leading-8 md:leading-10 lg:leading-12">Or just looking for that showroom fresh feel?</h2>
+              <div className="flex flex-col gap-3 md:gap-4">
+                <p className="text-dark-2 text-lg md:text-xl leading-7">Maybe you’re looking to sell your vehicle and want it looking immaculate for potential buyers? AK Mobile Valeting can help you get your car showroom ready to make it appealing and stand out from the crowd.</p>
+              </div>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <Link href="#contact">
+                  <Button
+                    variant="solid"
+                    colour="accent"
+                    border="rounded"
+                    className=""
+                  >
+                    Get in touch</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
+      <Footer />
     </div>
+    </>
   );
 }
