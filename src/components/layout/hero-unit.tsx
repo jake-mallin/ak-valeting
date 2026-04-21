@@ -21,10 +21,10 @@ export default function HeroUnit() {
               <p className="text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
                 Friendly
               </p>
-              <p className="md:ml-2 sm:ml-10 text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
+              <p className="sm:ml-10 text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
                 Professional
               </p>
-              <p className="md:ml-4 sm:ml-20 text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
+              <p className="sm:ml-20 text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
                 High Class
               </p>
             </div>
