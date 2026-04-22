@@ -8,7 +8,7 @@ export default function HeroUnit() {
       <div className="absolute left-0 top-0 md:right-0 md:left-auto w-full md:w-2/3 h-full after:absolute after:inset-0 after:bg-black/48 md:after:bg-black/20">
         <Image
           src="/hero-bg.jpg"
-          alt="AK Valeting hero background"
+          alt="Prestige Bentley vehicle following a full valet from AK Mobile Valeting"
           fill
           priority
           className="object-cover"
@@ -16,7 +16,7 @@ export default function HeroUnit() {
       </div>
       <div className="wrapper">
         <div className="container">
-          <div className="relative flex flex-col justify-center min-h-64 md:min-h-180 w-1/3 min-w-80 text-white text-center md:text-left md:bg-dark">
+          <div className="relative flex flex-col justify-center min-h-64 md:min-h-180 w-full md:w-1/3 min-w-80 text-white text-center md:text-left md:bg-dark">
             <div className="flex flex-col">
               <p className="text-4xl font-bold uppercase text-nowrap sm:text-6xl md:text-7xl">
                 Friendly
@@ -29,9 +29,9 @@ export default function HeroUnit() {
               </p>
             </div>
 
-            <p className="mt-6 text-base font-bold uppercase md:text-nowrap text-white md:text-2xl">
+            <h1 className="mt-6 text-base font-bold uppercase md:text-nowrap text-white md:text-2xl">
               Mobile Valeting Service in Staffordshire
-            </p>
+            </h1>
 
             <div className="mt-10 flex flex-row justify-center md:justify-start gap-4">
               <Link href="#what-we-offer">

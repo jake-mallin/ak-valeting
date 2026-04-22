@@ -13,7 +13,7 @@ type HeaderProps = {
 
 export default function Header({
   logoSrc = "/logo.svg",
-  logoAlt = "AK Valeting",
+  logoAlt = "AK Mobile Valeting",
   facebookUrl = "https://www.facebook.com/AKMValeting",
   phoneNumber = "07951 803181",
 }: HeaderProps) {

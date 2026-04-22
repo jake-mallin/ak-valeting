@@ -8,9 +8,41 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "AK Valeting",
-  description: "Professional valeting services",
+export const metadata = {
+  metadataBase: new URL("https://www.akmobilevaleting.co.uk"),
+  title: {
+    default: " | Mobile Car Valeting in Staffordshire",
+    template: "%s | ",
+  },
+  description:
+    "Professional mobile car valeting in Staffordshire, North Staffordshire and South Cheshire. Established in 2008, offering regular and one-off valeting at your home or workplace.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: " | Mobile Car Valeting in Staffordshire",
+    description:
+      "Friendly, professional mobile car valeting service covering Staffordshire, North Staffordshire and South Cheshire.",
+    url: "https://www.akmobilevaleting.co.uk",
+    siteName: "",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: " van",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: " | Mobile Car Valeting in Staffordshire",
+    description:
+      "Professional mobile car valeting at your home or workplace across Staffordshire and South Cheshire.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
