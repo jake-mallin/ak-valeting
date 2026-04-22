@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL("https://www.akmobilevaleting.co.uk"),
   title: {
-    default: " | Mobile Car Valeting in Staffordshire",
+    default: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
     template: "%s | ",
   },
   description:
@@ -20,7 +20,7 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: " | Mobile Car Valeting in Staffordshire",
+    title: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
     description:
       "Friendly, professional mobile car valeting service covering Staffordshire, North Staffordshire and South Cheshire.",
     url: "https://www.akmobilevaleting.co.uk",
