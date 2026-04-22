@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: " | Mobile Car Valeting in Staffordshire",
+    title: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
     description:
       "Professional mobile car valeting at your home or workplace across Staffordshire and South Cheshire.",
     images: ["/og-image.jpg"],

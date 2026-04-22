@@ -47,7 +47,7 @@ export default function Footer({
               className="flex justify-center items-center gap-2.5 px-3 py-2 bg-[#1877F2] rounded-lg text-white text-base font-bold leading-6 transition hover:brightness-120"
             >
               <i className="fa fa-facebook-f" />
-              <span></span>
+              <span>AK Mobile Valeting</span>
             </a>
             <a
               href={`tel:${phoneNumber.replace(/\s+/g, "")}`}
