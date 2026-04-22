@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <div className="grow shrink basis-auto">
               <div className="flex flex-col gap-4 md:gap-6">
-                <p className="text-foreground text-xl font-medium leading-7">AK Valeting is a professional mobile car valeting service established in 2008, proudly serving North Staffordshire and South Cheshire.</p>
+                <p className="text-foreground text-xl font-medium leading-7">AK Mobile Valeting is a professional mobile car valeting service established in 2008, proudly serving North Staffordshire and South Cheshire.</p>
                 <div className="flex flex-col gap-3 md:gap-4">
                   <p className="text-neutral-700 text-base leading-6">We use high-quality products from trusted brands such as Autosmart and Autoglym, the same materials used by leading car dealerships, to ensure every vehicle receives the best possible care. </p>
                   <p className="text-neutral-700 text-base leading-6">Whether you need regular weekly, fortnightly, or monthly maintenance valets, or a one-off full valet when selling or returning a lease vehicle, our goal is to deliver showroom-quality results at a competitive price. </p>
