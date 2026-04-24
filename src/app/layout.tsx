@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -57,7 +57,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
-
+        <Analytics/>
         <Script
           src="https://kit.fontawesome.com/ea36fa6d9b.js"
           crossOrigin="anonymous"
