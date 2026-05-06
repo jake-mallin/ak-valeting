@@ -30,7 +30,7 @@ export default function HeroUnit() {
             </div>
 
             <h1 className="mt-6 text-base font-bold uppercase md:text-nowrap text-white md:text-2xl">
-              Mobile Valeting Service in Staffordshire
+              Mobile Valeting Service in Stoke-on-Trent
             </h1>
 
             <div className="mt-10 flex flex-row justify-center md:justify-start gap-4">

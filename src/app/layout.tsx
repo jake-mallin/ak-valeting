@@ -11,18 +11,18 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL("https://www.akmobilevaleting.co.uk"),
   title: {
-    default: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
+    default: "AK Mobile Valeting | Mobile Car Valeting in Stoke-on-Trent",
     template: "%s | ",
   },
   description:
-    "Professional mobile car valeting in Staffordshire, North Staffordshire and South Cheshire. Established in 2008, offering regular and one-off valeting at your home or workplace.",
+    "Professional mobile car valeting in Stoke-on-Trent, Stoke-on-Trent and South Cheshire. Established in 2008, offering regular and one-off valeting at your home or workplace.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
+    title: "AK Mobile Valeting | Mobile Car Valeting in Stoke-on-Trent",
     description:
-      "Friendly, professional mobile car valeting service covering Staffordshire, North Staffordshire and South Cheshire.",
+      "Friendly, professional mobile car valeting service covering Stoke-on-Trent, Stoke-on-Trent and South Cheshire.",
     url: "https://www.akmobilevaleting.co.uk",
     siteName: "",
     images: [
@@ -38,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AK Mobile Valeting | Mobile Car Valeting in Staffordshire",
+    title: "AK Mobile Valeting | Mobile Car Valeting in Stoke-on-Trent",
     description:
-      "Professional mobile car valeting at your home or workplace across Staffordshire and South Cheshire.",
+      "Professional mobile car valeting at your home or workplace across Stoke-on-Trent and South Cheshire.",
     images: ["/og-image.jpg"],
   },
 };

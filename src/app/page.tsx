@@ -13,15 +13,15 @@ const localBusinessSchema = {
   url: "https://www.akmobilevaleting.co.uk",
   telephone: "07951 803181",
   description:
-    "Professional mobile car valeting service established in 2008, serving Staffordshire, North Staffordshire and South Cheshire.",
+    "Professional mobile car valeting service established in 2008, serving Stoke-on-Trent, Stoke-on-Trent and South Cheshire.",
   areaServed: [
     {
       "@type": "Place",
-      name: "Staffordshire",
+      name: "Stoke-on-Trent",
     },
     {
       "@type": "Place",
-      name: "North Staffordshire",
+      name: "Stoke-on-Trent",
     },
     {
       "@type": "Place",
@@ -61,11 +61,11 @@ export default function Home() {
         <main className="wrapper flex flex-col gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 lg:py-20">
           <div className="container flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12">
             <div className="grow shrink basis-auto max-w-152">
-              <Image src="/promo-1.jpg" alt="AK Mobile Valeting van providing mobile car valeting in Staffordshire" width={624} height={468} className="object-cover" />
+              <Image src="/promo-1.jpg" alt="AK Mobile Valeting van providing mobile car valeting in Stoke-on-Trent" width={624} height={468} className="object-cover" />
             </div>
             <div className="grow shrink basis-auto">
               <div className="flex flex-col gap-4 md:gap-6">
-                <p className="text-foreground text-xl font-medium leading-7">AK Mobile Valeting is a professional mobile car valeting service established in 2008, proudly serving North Staffordshire and South Cheshire.</p>
+                <p className="text-foreground text-xl font-medium leading-7">AK Mobile Valeting is a professional mobile car valeting service established in 2008, proudly serving Stoke-on-Trent and South Cheshire.</p>
                 <div className="flex flex-col gap-3 md:gap-4">
                   <p className="text-neutral-700 text-base leading-6">We use high-quality products from trusted brands such as Autosmart and Autoglym, the same materials used by leading car dealerships, to ensure every vehicle receives the best possible care. </p>
                   <p className="text-neutral-700 text-base leading-6">Whether you need regular weekly, fortnightly, or monthly maintenance valets, or a one-off full valet when selling or returning a lease vehicle, our goal is to deliver showroom-quality results at a competitive price. </p>
